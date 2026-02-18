@@ -1,0 +1,187 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.container-principal {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+.encabezado {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    padding-left: 50px;
+    width: 100%;
+}
+.h2-volver {
+    font-size: 25px;
+    color: white;
+}
+.container-1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    min-height: 100vh;
+    align-items: center;
+    background: linear-gradient(135deg, #4d12ff, #231665);
+}
+.layout1 {
+    width: 100%;
+    height: 100%;
+    padding-left: 50px;
+}
+.h1-enviar{
+    padding-top: 230px;
+    font-size: 4rem;
+    color: white;
+}
+.p-enviar {
+    font-size: 20px;
+    color: white;
+}
+.container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    width: 50%;
+    min-height: 100vh;
+    align-items: left;
+}
+.layout2{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+}
+.input-group {
+    width: 100%;
+}
+
+.form-control {
+    height: 56px;
+    font-size: 1.1rem;
+    width: 100%;
+    border-radius: 12px 0 0 12px;
+}
+
+.input-group .btn {
+    border-radius: 0 12px 12px 0;
+}
+
+.action-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 10px 5px;
+    border-radius: 16px;
+    background: white;
+    border: 2px solid #3b82f6; 
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.action-card:hover {
+    background: #f0f7ff;
+    transform: translateY(-2px);
+}
+
+
+.icon-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+.add-contact{
+    margin-top: 20px;
+}
+.action-card .text h4 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.action-card .text p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+.contact-card {
+    display: flex;
+    align-items: left;
+    padding: 14px 18px;
+    border-radius: 14px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 12px;
+    transition: background 0.2s ease;
+    margin: 20px;
+}
+
+.contact-card:hover {
+    background: #f9fafb;
+}
+.contact-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #eff6ff;
+    color: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-right: 14px;
+}
+.contact-info {
+    flex: 1;
+}
+.contact-info h4 {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #111827;
+}
+.contact-info p {
+    margin: 2px 0 0;
+    font-size: 0.8rem;
+    color: #6b7280;
+}
+.contact-action {
+    color: #9ca3af;
+    font-size: 14px;
+}
+.btn-azul {
+    background: linear-gradient(135deg, #450cff, #2a0b63);
+    border-color: none;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.modal-content{
+    border-radius: 20px;
+}
+.modal-body{
+    display: flex;
+    flex-direction: column;
+}
+.modal-body > input
+{
+    width: 50%;
+    border-radius: 5px;
+    border-color: #67a1f2;
+    width: 100%;
+}
+.btn-primary{
+    background: linear-gradient(135deg, #450cff, #2a0b63);
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar dinero</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="enviar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="container-principal">
+        <div class="container-1">
+            <div class="encabezado">
+                <h2 class="text-left h2-volver">
+                    <a href="../menu/menu.html" class="fas fa-arrow-left mr-2"></a> Volver
+                </h2>
+            </div>
+            <div class="layout1">
+                <h1 class=" text-left d-block h1-enviar">
+                    Enviar dinero
+                </h1>
+                <p class="p-enviar">
+                    Selecciona un contacto
+                </p>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="layout2">
+                <div class="container-2">
+                    <div class="layout2">
+                        <div class="input-group w-100">
+                            <input type="search" class="form-control" placeholder="Buscar contacto">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-success" type="button">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="action-card add-contact"  data-toggle="modal" data-target="#exampleModal">
+                            <div class="icon-circle add">
+                                <i class="fas fa-user-plus"></i>
+                            </div>
+                            <div class="text">
+                                <h4>Agregar contacto</h4>
+                                <p>Guarda un nuevo destinatario</p>
+                            </div>
+                        </div>
+                        <div id="contact-list">
+                        </div>
+                      
+                        <div class="button-home">
+                            <a href="../menu/menu.html" type="button" class="btn btn-primary btn-lg btn-azul"> Volver al menú </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Añadir contacto</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <label for="i-name" class="lbl-name">
+                            Nombre y apellido
+                        </label>
+                        <input id="name" type="text" placeholder="Ej: Pablo Pérez" class="i-name">
+                        <label for="i-email"> 
+                            Correo electronico
+                        </label>
+                        <input id="email" type="text" placeholder="correo@example.com" class="i-email">
+                        <label for="i-alias">Alias</label>
+                        <input id="alias" type="text" placeholder="Ej: Pablito" class="i-alias">
+                        <label for="i-ncuenta">
+                            rut
+                        </label>
+                        <input id="ncuenta" type="text" placeholder="Ej: 11.111.111-1" class="i-ncuenta">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="button" id="add-contact-btn" class="btn btn-primary">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <div class="modal fade" id="modalenviar" tabindex="-1" role="dialog" aria-labelledby="modalenviar"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalenviarLabel">Enviar dinero</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h3>
+                            Enviar dinero a <span id="contact-name-send"></span>
+                        </h3>
+                        <span>Saldo disponible: $<span id="available-balance">0</span></span>
+                        <br><br>
+                        
+                        <label for="i-monto" class="lbl-monto">
+                            Monto a enviar
+                        </label>
+                        <input id="monto-enviar" type="number" placeholder="0" class="i-monto">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="button" id="send-money-btn" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="enviar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.container1, .container2 {
+    width: 50%;
+    min-height: 100vh;
+}
+
+
+body{
+    display: flex;
+    flex-direction: row;
+}
+* {
+    box-sizing: border-box;
+}
+.container1{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background: linear-gradient(135deg, #0062ff, #294eb5);
+    padding: 80px 70px;
+}
+.encabezado{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 40px;
+}
+.cerrar-sesion{
+    cursor: pointer;;
+}
+.card-saldo{
+    background-color: rgb(151, 151, 255, 0.5);
+    height: 100%;
+    width: 100%;
+    border-radius: 28px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 2pxs;
+    border-color: rgb(255, 255, 255);
+    padding: 50px;
+}
+.saldo{
+    margin: 30px;
+    color: white;
+}
+.p-saldo{
+    margin: 0;
+}
+.monto{
+    font-size: 4.5rem;
+    margin-top: 10px;
+}
+.historial{
+    display: flex;
+    flex-direction: column;
+}
+.container2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 80px;
+}
+.encabezado2{
+    margin-bottom: 50px;
+}
+.h2-acciones{
+    text-align: left;
+    color: rgb(9, 9, 195);
+}
+.action-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: inherit;
+
+    padding: 22px 2px;
+    border-radius: 16px;
+    margin-bottom: 18px;
+    background: #f5f7ff;
+    width: 100%;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+}
+.enviar-dinero
+{
+    text-align: left;
+}
+.action-card:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+.icon-circle {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 22px;
+}
+.icon-circle.deposit {
+    background: #22c55e;
+}
+.icon-circle.send {
+    background: #3b82f6;
+}
+.icon-circle.history {
+    background: #a855f7;
+}
+.action-card h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.action-card p {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #6b7280;
+
+}

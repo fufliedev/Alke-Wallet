@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="depositar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Depositar</title>
+</head>
+
+<body>
+    <div class="container-principal">
+        <div class="container-1">
+            <div class="encabezado">
+                <h2 class="text-left h2-volver">
+                    <a href="menu.html" class="text-white text-decoration-none">
+                        <a href="../menu/menu.html" class="fas fa-arrow-left mr-2"></a> Volver
+                    </a>
+                </h2>
+            </div>
+            <div class="layout1">
+                <h1 class=" text-left d-block depositar">Depositar dinero</h1>
+                <p class="p-depositar">
+                    Agrega fondos a tu billetera
+                </p>
+            </div>
+        </div>
+        <div class="container-2">
+            <div class="form-group">
+                <label for="monto" class="lbl-monto">
+                    Monto a depositar
+                </label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">$</span>
+                    </div>
+                    <input type="number" class="form-control input-monto" id="monto" placeholder="0" min="0">
+                </div>
+                <div class="montos-rapidos mt-3">
+                    <button type="button" id="5k-quickbtn" class="btn btn-outline-success">$5.000</button>
+                    <button type="button" id="10k-quickbtn" class="btn btn-outline-success">$10.000</button>
+                    <button type="button" id="20k-quickbtn" class="btn btn-outline-success">$20.000</button>
+                </div>
+                <div class="button-depositar">
+                    <button type="button" id="depositar" class="btn btn-primary btn-lg btn-verde"> Depositar </button>
+                </div>
+                <div class="button-home">
+                    <a href="../menu/menu.html" class="btn btn-primary btn-lg btn-azul">
+                        Volver al menú
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="depositar.js"></script>
+
+    
+</body>
+
+</html>
