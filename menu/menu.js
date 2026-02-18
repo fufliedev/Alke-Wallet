@@ -29,4 +29,3 @@ btnMovimientos.addEventListener("click", function() {
 
 window.addEventListener("load", actualizarSaldo);
 
-console.log("test git")
